@@ -54,7 +54,7 @@ Yes, the plugin provides the option to download all failed registration attempts
 
 ### License
 
-This plugin is licensed under the GPLv2 or later. You are free to modify and redistribute this plugin under the same license.
+This plugin is licensed under the GPLv3 or later. You are free to modify and redistribute this plugin under the same license.
 
 ### Credits
 
