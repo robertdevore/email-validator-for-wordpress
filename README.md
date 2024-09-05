@@ -45,6 +45,7 @@ Yes, the plugin provides the option to download all failed registration attempts
 ### Screenshots
 
 1. **Settings Page:** The Email Validator settings page, where you can configure the digit limit and manage logs.
+   ![Settings](screenshot-1.jpg)
 
 ### Changelog
 
