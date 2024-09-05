@@ -220,9 +220,10 @@ function evwp_email_validator_settings_render() {
     <div class="wrap">
         <h1><?php esc_html_e( 'Email Validator Settings', 'email-validator-wp' ); ?></h1>
 
+        <p>Built by <a href="https://robertdevore.com/">Robert DeVore</a></p>
         <hr />
 
-        <form action="options.php" method="post">
+        <form class="email-validator" action="options.php" method="post">
             <?php
             settings_fields( 'evwp_email_validator' );
             do_settings_sections( 'evwp_email_validator' );
@@ -230,20 +231,24 @@ function evwp_email_validator_settings_render() {
             ?>
         </form>
 
+        <style>.email-validator h2 { display: none !important; }</style>
+
         <hr />
 
         <h2><?php esc_html_e( 'Failed Registration Attempts', 'email-validator-wp' ); ?></h2>
         <p><?php esc_html_e( 'Download or clear the log of failed registration attempts:', 'email-validator-wp' ); ?></p>
 
-        <form method="post" style="display: inline-block;">
-            <?php wp_nonce_field( 'evwp_download_csv', 'evwp_download_nonce' ); ?>
-            <input type="submit" name="evwp_download_csv" class="button button-primary" value="<?php esc_html_e( 'Download CSV', 'email-validator-wp' ); ?>">
-        </form>
+        <div class="" style="padding: 12px 0;">
+            <form method="post" style="display: inline-block;">
+                <?php wp_nonce_field( 'evwp_download_csv', 'evwp_download_nonce' ); ?>
+                <input type="submit" name="evwp_download_csv" class="button button-primary" value="<?php esc_html_e( 'Download CSV', 'email-validator-wp' ); ?>">
+            </form>
 
-        <form method="post" style="display: inline-block;">
-            <?php wp_nonce_field( 'evwp_clear_log', 'evwp_clear_log_nonce' ); ?>
-            <input type="submit" name="evwp_clear_log" class="button button-secondary" value="<?php esc_html_e( 'Clear Log', 'email-validator-wp' ); ?>">
-        </form>
+            <form method="post" style="display: inline-block;">
+                <?php wp_nonce_field( 'evwp_clear_log', 'evwp_clear_log_nonce' ); ?>
+                <input type="submit" name="evwp_clear_log" class="button button-secondary" value="<?php esc_html_e( 'Clear Log', 'email-validator-wp' ); ?>">
+            </form>
+        </div>
 
         <hr />
 
