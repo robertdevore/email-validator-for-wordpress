@@ -9,9 +9,9 @@
  *
  * @wordpress-plugin
  *
- * Plugin Name: Email Validator for WordPress
- * Description: A plugin that stops user registration if the email address has more numbers than a specified limit (configurable). It also works for WooCommerce registration if WooCommerce is active.
- * Plugin URI:  https://robertdevore.com/
+ * Plugin Name: Email Validator for WordPress®
+ * Description: A plugin that stops user registration if the email address has more numbers than a specified limit (configurable). It also works for WooCommerce registration if WooCommerce® is active.
+ * Plugin URI:  https://github.com/robertdevore/email-validator-for-wordpress/
  * Version:     1.0.0
  * Author:      Robert DeVore
  * Author URI:  https://robertdevore.com/
@@ -19,12 +19,25 @@
  * License URI: http://www.gnu.org/licenses/gpl-3.0.txt
  * Text Domain: email-validator-wp
  * Domain Path: /languages
+ * Update URI:  https://github.com/robertdevore/email-validator-for-wordpress/
  */
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
     die;
 }
+
+require 'plugin-update-checker/plugin-update-checker.php';
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+
+$myUpdateChecker = PucFactory::buildUpdateChecker(
+	'https://github.com/deviodigital/dispensary-age-verification/',
+	__FILE__,
+	'email-validator-for-wordpress'
+);
+
+//Set the branch that contains the stable release.
+$myUpdateChecker->setBranch( 'main' );
 
 /**
  * Load plugin text domain for localization.
