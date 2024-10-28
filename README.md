@@ -49,6 +49,9 @@ Yes, the plugin provides the option to download all failed registration attempts
 
 ### Changelog
 
+#### 1.0.1
+- Disabled dotorg updates and included the Plugin Update Checker to serve updates from github.com
+
 #### 1.0.0
 - Initial release.
 
