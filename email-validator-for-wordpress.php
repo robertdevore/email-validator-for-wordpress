@@ -36,19 +36,19 @@ $myUpdateChecker = PucFactory::buildUpdateChecker(
 	'email-validator-for-wordpress'
 );
 
-//Set the branch that contains the stable release.
+// Set the branch that contains the stable release.
 $myUpdateChecker->setBranch( 'main' );
 
 /**
  * Load plugin text domain for localization.
  *
+ * @since  1.0.0
  * @return void
  */
 function evwp_email_validator_load_textdomain() {
     load_plugin_textdomain( 'email-validator-wp', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 }
 add_action( 'plugins_loaded', 'evwp_email_validator_load_textdomain' );
-
 
 /**
  * Validate email to block registration if it contains too many numbers (as defined by the user).
@@ -58,6 +58,7 @@ add_action( 'plugins_loaded', 'evwp_email_validator_load_textdomain' );
  * @param string   $email    The email address entered during registration.
  * @param WP_Error $errors   An object to store validation errors.
  * 
+ * @since  1.0.0
  * @return void
  */
 function evwp_validate_email_numbers( $username, $email, $errors ) {
@@ -87,6 +88,7 @@ add_action( 'register_post', 'evwp_validate_email_numbers', 10, 3 );
 /**
  * Check if WooCommerce is active and add WooCommerce-specific registration hook.
  *
+ * @since  1.0.0
  * @return void
  */
 function evwp_check_for_woocommerce() {
@@ -104,6 +106,7 @@ add_action( 'plugins_loaded', 'evwp_check_for_woocommerce' );
  * @param string   $email    The email address entered during registration.
  * @param WP_Error $errors   An object to store validation errors.
  * 
+ * @since  1.0.0
  * @return void
  */
 function evwp_validate_woocommerce_email_numbers( $username, $email, $errors ) {
@@ -135,6 +138,7 @@ function evwp_validate_woocommerce_email_numbers( $username, $email, $errors ) {
  * @param string $username The username that was used.
  * @param string $email    The email that failed validation.
  * 
+ * @since  1.0.0
  * @return void
  */
 function evwp_log_failed_attempt( $username, $email ) {
@@ -155,6 +159,7 @@ function evwp_log_failed_attempt( $username, $email ) {
 /**
  * Add the settings page to the WordPress menu.
  *
+ * @since  1.0.0
  * @return void
  */
 function evwp_email_validator_settings_page() {
@@ -171,6 +176,7 @@ add_action( 'admin_menu', 'evwp_email_validator_settings_page' );
 /**
  * Initialize the plugin settings.
  *
+ * @since  1.0.0
  * @return void
  */
 function evwp_email_validator_settings_init() {
@@ -199,6 +205,7 @@ add_action( 'admin_init', 'evwp_email_validator_settings_init' );
 /**
  * Render the number limit input field.
  *
+ * @since  1.0.0
  * @return void
  */
 function evwp_email_number_limit_render() {
@@ -222,6 +229,7 @@ function evwp_email_number_limit_render() {
 /**
  * Render the settings page and provide options to download logs, clear logs, and filter by date.
  *
+ * @since  1.0.0
  * @return void
  */
 function evwp_email_validator_settings_render() {
@@ -233,7 +241,7 @@ function evwp_email_validator_settings_render() {
     <div class="wrap">
         <h1><?php esc_html_e( 'Email Validator Settings', 'email-validator-wp' ); ?></h1>
 
-        <p>Built by <a href="https://robertdevore.com/">Robert DeVore</a></p>
+        <p><?php esc_attr__( 'Brought to you by', 'email-validator-wp' ) ?>: <a href="https://robertdevore.com/" target="_blank">Robert DeVore</a></p>
         <hr />
 
         <form class="email-validator" action="options.php" method="post">
@@ -277,19 +285,19 @@ function evwp_email_validator_settings_render() {
     </div>
     <?php
 
-    // Handle CSV download for all attempts
+    // Handle CSV download for all attempts.
     if ( isset( $_POST['evwp_download_csv'] ) && check_admin_referer( 'evwp_download_csv', 'evwp_download_nonce' ) ) {
         evwp_download_failed_attempts_csv();
     }
 
-    // Handle CSV download by date
+    // Handle CSV download by date.
     if ( isset( $_POST['evwp_download_csv_by_date'] ) && check_admin_referer( 'evwp_download_csv_by_date', 'evwp_download_date_nonce' ) ) {
         $start_date = sanitize_text_field( $_POST['start_date'] );
         $end_date   = sanitize_text_field( $_POST['end_date'] );
         evwp_download_failed_attempts_csv_by_date( $start_date, $end_date );
     }
 
-    // Handle log clearing
+    // Handle log clearing.
     if ( isset( $_POST['evwp_clear_log'] ) && check_admin_referer( 'evwp_clear_log', 'evwp_clear_log_nonce' ) ) {
         evwp_clear_failed_attempts_log();
     }
@@ -298,6 +306,7 @@ function evwp_email_validator_settings_render() {
 /**
  * Download the failed registration attempts as a CSV file.
  *
+ * @since  1.0.0
  * @return void
  */
 function evwp_download_failed_attempts_csv() {
@@ -325,10 +334,10 @@ function evwp_download_failed_attempts_csv() {
 
     // Close output stream and end output buffer.
     fclose( $output );
-    
+
     // Flush output buffer to ensure all content is sent correctly.
     ob_flush();
-    
+
     exit;
 }
 
@@ -338,6 +347,7 @@ function evwp_download_failed_attempts_csv() {
  * @param string $start_date The start date (Y-m-d format).
  * @param string $end_date   The end date   (Y-m-d format).
  * 
+ * @since  1.0.0
  * @return void
  */
 function evwp_download_failed_attempts_csv_by_date( $start_date, $end_date ) {
@@ -378,6 +388,7 @@ function evwp_download_failed_attempts_csv_by_date( $start_date, $end_date ) {
 /**
  * Clear the failed attempts log
  * 
+ * @since  1.0.0
  * @return void
  */
 function evwp_clear_failed_attempts_log() {
