@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Email Validator for WordPress®\n"
-"POT-Creation-Date: 2024-11-17 01:34-0500\n"
-"PO-Revision-Date: 2024-11-17 01:33-0500\n"
+"POT-Creation-Date: 2025-02-05 22:33-0500\n"
+"PO-Revision-Date: 2025-02-05 22:33-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -21,76 +21,77 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 "X-Poedit-SearchPathExcluded-1: plugin-update-checker/vendor\n"
+"X-Poedit-SearchPathExcluded-2: vendor\n"
 
-#: email-validator-for-wordpress.php:77
+#: email-validator-for-wordpress.php:86
 #, php-format
 msgid ""
 "Registration failed: The email address cannot contain %d or more numbers."
 msgstr ""
 
-#: email-validator-for-wordpress.php:125
+#: email-validator-for-wordpress.php:134
 #, php-format
 msgid ""
 "WooCommerce registration failed: The email address cannot contain %d or more "
 "numbers."
 msgstr ""
 
-#: email-validator-for-wordpress.php:167 email-validator-for-wordpress.php:189
-#: email-validator-for-wordpress.php:242
+#: email-validator-for-wordpress.php:176 email-validator-for-wordpress.php:198
+#: email-validator-for-wordpress.php:251
 msgid "Email Validator Settings"
 msgstr ""
 
-#: email-validator-for-wordpress.php:168
+#: email-validator-for-wordpress.php:177
 msgid "Email Validator"
 msgstr ""
 
-#: email-validator-for-wordpress.php:197
+#: email-validator-for-wordpress.php:206
 msgid "Number Limit"
 msgstr ""
 
-#: email-validator-for-wordpress.php:225
+#: email-validator-for-wordpress.php:234
 msgid ""
 "Set the maximum number of digits allowed in the email address for "
 "registration."
 msgstr ""
 
-#: email-validator-for-wordpress.php:238
+#: email-validator-for-wordpress.php:247
 msgid "You do not have sufficient permissions to access this page."
 msgstr ""
 
-#: email-validator-for-wordpress.php:244
+#: email-validator-for-wordpress.php:253
 msgid "Brought to you by"
 msgstr ""
 
-#: email-validator-for-wordpress.php:259
+#: email-validator-for-wordpress.php:268
 msgid "Failed Registration Attempts"
 msgstr ""
 
-#: email-validator-for-wordpress.php:260
+#: email-validator-for-wordpress.php:269
 msgid "Download or clear the log of failed registration attempts:"
 msgstr ""
 
-#: email-validator-for-wordpress.php:265
+#: email-validator-for-wordpress.php:274
 msgid "Download CSV"
 msgstr ""
 
-#: email-validator-for-wordpress.php:270
+#: email-validator-for-wordpress.php:279
 msgid "Clear Log"
 msgstr ""
 
-#: email-validator-for-wordpress.php:276
+#: email-validator-for-wordpress.php:285
 msgid "Download by Date"
 msgstr ""
 
-#: email-validator-for-wordpress.php:279
+#: email-validator-for-wordpress.php:288
 msgid "Start Date:"
 msgstr ""
 
-#: email-validator-for-wordpress.php:281
+#: email-validator-for-wordpress.php:290
 msgid "End Date:"
 msgstr ""
 
-#: email-validator-for-wordpress.php:283
+#: email-validator-for-wordpress.php:292
 msgid "Download CSV by Date"
 msgstr ""
 

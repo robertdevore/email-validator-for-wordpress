@@ -387,10 +387,10 @@ function evwp_download_failed_attempts_csv_by_date( $start_date, $end_date ) {
 
     // Close output stream and end output buffer.
     fclose( $output );
-    
+
     // Flush output buffer to ensure all content is sent correctly.
     ob_flush();
-    
+
     exit;
 }
 
