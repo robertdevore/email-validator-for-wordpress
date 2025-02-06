@@ -1,0 +1,170 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Email Validator for WordPress®\n"
+"POT-Creation-Date: 2025-02-05 22:35-0500\n"
+"PO-Revision-Date: 2025-02-05 22:35-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: email-validator-for-wordpress.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Poedit-SearchPathExcluded-1: plugin-update-checker/vendor\n"
+"X-Poedit-SearchPathExcluded-2: vendor\n"
+
+#: email-validator-for-wordpress.php:86
+#, php-format
+msgid ""
+"Registration failed: The email address cannot contain %d or more numbers."
+msgstr ""
+"L'enregistrement a échoué : L'adresse électronique ne peut pas contenir %d "
+"ou plus de chiffres."
+
+#: email-validator-for-wordpress.php:134
+#, php-format
+msgid ""
+"WooCommerce registration failed: The email address cannot contain %d or more "
+"numbers."
+msgstr ""
+"L'enregistrement de WooCommerce a échoué : L'adresse e-mail ne peut pas "
+"contenir %d ou plus de chiffres."
+
+#: email-validator-for-wordpress.php:176 email-validator-for-wordpress.php:198
+#: email-validator-for-wordpress.php:251
+msgid "Email Validator Settings"
+msgstr "Paramètres du validateur d'email"
+
+#: email-validator-for-wordpress.php:177
+msgid "Email Validator"
+msgstr "Validateur d’e-mail"
+
+#: email-validator-for-wordpress.php:206
+msgid "Number Limit"
+msgstr "Limite de numéros"
+
+#: email-validator-for-wordpress.php:234
+msgid ""
+"Set the maximum number of digits allowed in the email address for "
+"registration."
+msgstr ""
+"Définir le nombre maximum de chiffres autorisés dans l'adresse électronique "
+"pour l'enregistrement."
+
+#: email-validator-for-wordpress.php:247
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Vous n'avez pas les permissions suffisantes pour accéder à cette page."
+
+#: email-validator-for-wordpress.php:253
+msgid "Brought to you by"
+msgstr "Vous est proposé par"
+
+#: email-validator-for-wordpress.php:268
+msgid "Failed Registration Attempts"
+msgstr "Tentatives d'enregistrement échouées"
+
+#: email-validator-for-wordpress.php:269
+msgid "Download or clear the log of failed registration attempts:"
+msgstr ""
+"Télécharger ou effacer le journal des tentatives d'enregistrement qui ont "
+"échoué :"
+
+#: email-validator-for-wordpress.php:274
+msgid "Download CSV"
+msgstr "Télécharger CSV"
+
+#: email-validator-for-wordpress.php:279
+msgid "Clear Log"
+msgstr "Effacer le contenu du journal de connexion"
+
+#: email-validator-for-wordpress.php:285
+msgid "Download by Date"
+msgstr "Téléchargement par date"
+
+#: email-validator-for-wordpress.php:288
+msgid "Start Date:"
+msgstr "Date de début :"
+
+#: email-validator-for-wordpress.php:290
+msgid "End Date:"
+msgstr "Date de Fin:"
+
+#: email-validator-for-wordpress.php:292
+msgid "Download CSV by Date"
+msgstr "Télécharger le CSV par date"
+
+#: plugin-update-checker/Puc/v5p4/Plugin/Ui.php:56
+msgid "View details"
+msgstr "Voir les détails"
+
+#: plugin-update-checker/Puc/v5p4/Plugin/Ui.php:79
+#, php-format
+msgid "More information about %s"
+msgstr "Plus d’informations sur %s"
+
+#: plugin-update-checker/Puc/v5p4/Plugin/Ui.php:130
+msgid "Check for updates"
+msgstr "Vérifier les mises à jour"
+
+#: plugin-update-checker/Puc/v5p4/Plugin/Ui.php:217
+#, php-format
+msgctxt "the plugin title"
+msgid "The %s plugin is up to date."
+msgstr "Le plugin %s est à jour."
+
+#: plugin-update-checker/Puc/v5p4/Plugin/Ui.php:219
+#, php-format
+msgctxt "the plugin title"
+msgid "A new version of the %s plugin is available."
+msgstr "Une nouvelle version de l'extension %s est disponible."
+
+#: plugin-update-checker/Puc/v5p4/Plugin/Ui.php:221
+#, php-format
+msgctxt "the plugin title"
+msgid "Could not determine if updates are available for %s."
+msgstr "Impossible de déterminer si des mises à jour sont disponibles pour %s."
+
+#: plugin-update-checker/Puc/v5p4/Plugin/Ui.php:227
+#, php-format
+msgid "Unknown update checker status \"%s\""
+msgstr "Mise à jour inconnue statut \"%s\""
+
+#: plugin-update-checker/Puc/v5p4/Vcs/PluginUpdateChecker.php:113
+msgid "There is no changelog available."
+msgstr "Aucun registre de modifications disponible."
+
+#. Plugin Name of the plugin/theme
+msgid "Email Validator for WordPress®"
+msgstr "Validateur d'emails pour WordPress"
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/robertdevore/email-validator-for-wordpress/"
+msgstr "https://github.com/robertdevore/email-validator-for-wordpress/"
+
+#. Description of the plugin/theme
+msgid ""
+"A plugin that stops user registration if the email address has more numbers "
+"than a specified limit (configurable). It also works for WooCommerce "
+"registration if WooCommerce® is active."
+msgstr ""
+"Un plugin qui interrompt l'enregistrement d'un utilisateur si l'adresse "
+"électronique contient plus de chiffres qu'une limite spécifiée "
+"(configurable). Il fonctionne également pour l'enregistrement WooCommerce si "
+"WooCommerce® est actif."
+
+#. Author of the plugin/theme
+msgid "Robert DeVore"
+msgstr "Robert DeVore"
+
+#. Author URI of the plugin/theme
+msgid "https://robertdevore.com/"
+msgstr "https://robertdevore.com/"
