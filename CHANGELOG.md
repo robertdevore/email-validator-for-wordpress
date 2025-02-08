@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.0.2
+
+* [🐛 BUG: Fixed plugin slug in PluginUpdateChecker](https://github.com/robertdevore/email-validator-for-wordpress/commit/feaacbad958aa4c107ca27a743aa5d178e4a2e52)
+
 ## 1.0.1
 
 * [📦 NEW: Added WPCom Check to restrict plugin usage on wordpress.com](https://github.com/robertdevore/email-validator-for-wordpress/commit/a051d462e7441d54d26b8825fc6aca7a15966f2b)

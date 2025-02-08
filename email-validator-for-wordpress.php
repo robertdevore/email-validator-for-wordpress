@@ -12,7 +12,7 @@
  * Plugin Name: Email Validator for WordPress®
  * Description: A plugin that stops user registration if the email address has more numbers than a specified limit (configurable). It also works for WooCommerce registration if WooCommerce® is active.
  * Plugin URI:  https://github.com/robertdevore/email-validator-for-wordpress/
- * Version:     1.0.1
+ * Version:     1.0.2
  * Author:      Robert DeVore
  * Author URI:  https://robertdevore.com/
  * License:     GPL-3.0+
