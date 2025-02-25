@@ -31,7 +31,7 @@ require 'plugin-update-checker/plugin-update-checker.php';
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
 $myUpdateChecker = PucFactory::buildUpdateChecker(
-	'https://github.com/deviodigital/email-validator-for-wordpress/',
+	'https://github.com/robertdevore/email-validator-for-wordpress/',
 	__FILE__,
 	'email-validator-for-wordpress'
 );
@@ -54,10 +54,10 @@ new WPComPluginHandler( plugin_basename( __FILE__ ), 'https://robertdevore.com/w
  * @since  1.0.0
  * @return void
  */
-function evwp_email_validator_load_textdomain() {
+function evwp_load_textdomain() {
     load_plugin_textdomain( 'email-validator-wp', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 }
-add_action( 'plugins_loaded', 'evwp_email_validator_load_textdomain' );
+add_action( 'plugins_loaded', 'evwp_load_textdomain' );
 
 /**
  * Validate email to block registration if it contains too many numbers (as defined by the user).
